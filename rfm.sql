@@ -1,7 +1,3 @@
--- ============================================================
--- Customer Analytics Suite — Stage 3: RFM segmentation
--- Run with:  psql -U postgres -d customer_analytics -f sql/03_rfm.sql
--- ============================================================
 
 DROP TABLE IF EXISTS retail.customer_rfm;
 
