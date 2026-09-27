@@ -1,7 +1,3 @@
--- ============================================================
--- Customer Analytics Suite — Stage 1: raw schema
--- Run with:  psql -U postgres -d customer_analytics -f sql/01_create_schema.sql
--- ============================================================
 
 CREATE SCHEMA IF NOT EXISTS retail;
 
