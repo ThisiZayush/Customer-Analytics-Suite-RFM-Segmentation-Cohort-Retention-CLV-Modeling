@@ -1,7 +1,3 @@
--- ============================================================
--- Customer Analytics Suite — Stage 2: cleaning
--- Run with:  psql -U postgres -d customer_analytics -f sql/02_clean_data.sql
--- ============================================================
 
 DROP TABLE IF EXISTS retail.clean_lines;
 
