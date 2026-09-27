@@ -68,10 +68,10 @@ customer-analytics-suite/
 | Stage | Files | What it does |
 |---|---|---|
 | 1. Load | `01_create_schema.sql`, `01_load_data.py` | Load raw Excel data into `retail.raw_transactions` |
-| 2. Clean | `02_clean_data.sql`, `02b_quality_check.sql` | Build `retail.clean_lines` — drop unattributable/non-product/bad-price rows, dedupe, flag cancellations |
-| 3. RFM | `03_rfm.sql`, `03b_segment_summary.sql` | Score every customer on Recency/Frequency/Monetary; assign one of 9 named segments |
+| 2. Clean | `02_clean_data.sql` | Build `retail.clean_lines` — drop unattributable/non-product/bad-price rows, dedupe, flag cancellations |
+| 3. RFM | `03_rfm.sql`| Score every customer on Recency/Frequency/Monetary; assign one of 9 named segments |
 | 4. Cohorts | `04_cohort_retention.sql`, `04_cohort_heatmap.py` | Build monthly acquisition cohorts and a month-by-month retention heatmap |
-| 5. CLV | `05_clv.sql`, `05b_segment_clv_summary.sql` | Historical + 12-month projected CLV per customer, using the retention curve as a survival function |
+| 5. CLV | `05_clv.sql` | Historical + 12-month projected CLV per customer, using the retention curve as a survival function |
 | 6. Synthesis | `06_segment_summary.sql`, `06_segment_matrix.py` | Join RFM + retention + CLV into one per-segment view and a priority-matrix chart |
 
 Each stage's SQL depends on tables the previous stage created — run them in order.
