@@ -15,7 +15,7 @@ import seaborn as sns
 from sqlalchemy import create_engine
 
 DB_USER = "postgres"
-DB_PASSWORD = "pass1234"
+DB_PASSWORD = "yourpassword"
 DB_HOST = "localhost"
 DB_PORT = "5432"
 DB_NAME = "customer_analytics"
