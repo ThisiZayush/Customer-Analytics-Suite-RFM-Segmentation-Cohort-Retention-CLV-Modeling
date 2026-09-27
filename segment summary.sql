@@ -1,7 +1,3 @@
--- ============================================================
--- Customer Analytics Suite — Stage 6: synthesis
--- Run with:  psql -U postgres -d customer_analytics -f sql/06_segment_summary.sql
--- ============================================================
 
 DROP TABLE IF EXISTS retail.segment_summary;
 
