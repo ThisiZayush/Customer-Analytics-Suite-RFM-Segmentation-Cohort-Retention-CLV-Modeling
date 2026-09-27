@@ -1,7 +1,3 @@
--- ============================================================
--- Customer Analytics Suite — Stage 4: cohort retention
--- Run with:  psql -U postgres -d customer_analytics -f sql/04_cohort_retention.sql
--- ============================================================
 
 -- Each customer's acquisition cohort = the calendar month of their first completed order
 DROP TABLE IF EXISTS retail.customer_cohort;
