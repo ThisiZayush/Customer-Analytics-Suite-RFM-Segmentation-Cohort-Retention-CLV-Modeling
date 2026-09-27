@@ -1,8 +1,3 @@
--- ============================================================
--- Customer Analytics Suite — Stage 5: CLV estimation
--- Run with:  psql -U postgres -d customer_analytics -f sql/05_clv.sql
--- ============================================================
-
 -- Dataset-wide retention curve, pooled by period (not simple-averaged across
 -- cohorts, so small/recent cohorts don't get equal weight to large ones).
 -- Limited to periods 1-12: a 12-month forward-looking horizon.
