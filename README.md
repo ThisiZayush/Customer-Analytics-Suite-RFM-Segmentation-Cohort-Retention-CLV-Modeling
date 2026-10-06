@@ -50,12 +50,9 @@ customer-analytics-suite/
 ├── sql/
 │   ├── 01_create_schema.sql
 │   ├── 02_clean_data.sql
-│   ├── 02b_quality_check.sql
 │   ├── 03_rfm.sql
-│   ├── 03b_segment_summary.sql
 │   ├── 04_cohort_retention.sql
 │   ├── 05_clv.sql
-│   ├── 05b_segment_clv_summary.sql
 │   └── 06_segment_summary.sql
 └── scripts/
     ├── 01_load_data.py
